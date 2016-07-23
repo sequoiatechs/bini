@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html xxng-app="biniSite" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Support Bini</title>
+    <meta name="description" content="Información detallada de BINI">
+    <meta name="author" content="Autor BIni">
+
+    <!--========== CSS Custom File ===========-->
+    <link rel="stylesheet" href="css/style.css" media="screen" title="CSS Custom" charset="utf-8">
+    <!--========== Bootstrap File ===========-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="Bootstrap File" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="Bootstrap File" charset="utf-8">
+    <!--========== Sekeleton CSS File ==========-->
+    <link rel="stylesheet" href="css/skeleton.css" media="screen" title="Skeleton File" charset="utf-8">
+      
+    <!--========== JQuery UI & Javascript ==========-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#tabs" ).tabs();
+      } );
+    </script>
+    <!--========== Favicon ==========-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!--========== Fontawesome Icons ==========-->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--=========== Google Fonts API ===========-->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="headerLogos">
+                    <div class="logoLeft col-md-4">
+                        <a href="index.html"><img src="images/logoBeta.png" alt="" /></a>
+                    </div>
+                    <div class="logoMiddle col-md-4">
+                        <img src="images/logoHeader.png" alt="" />
+                    </div>
+                    <div class="appStoreImg col-md-4">
+                        <a href="http://apple.com" target="_blank"><img src="images/downloadApp.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </header>
+      
+    <section class="questionSection">
+     <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+            <img src="images/bLogo.png"/>
+          </div>
+          <div class="col-md-12">
+            <h1>Hi. How can we help you?</h1>
+          </div>
+          <div class="col-md-12 searchInput">   
+           <form>
+            <input type="text" name="question" placeholder="Search Bini">
+           </form>
+          </div>
+      </div>
+    </div>
+  </section>
+      
+  <section class="contentSection" id="tabs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="col-md-3 contentLinks">
+            <ul>
+                <li class="linksmenu active"><a href="#started">Getting Started</a></li>
+                <li class="linksmenu"><a href="#polices">Policies & Guidelines</a></li>
+                <li class="linksmenu"><a href="#account">My Account & Settings</a></li>
+                <li class="linksmenu"><a href="#help">I Need More Help</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-1"></div>
+          
+
+
+        <div class="col-md-8 contentInfo" id="started">
+
+          <div class="infoTitle">
+            <div class="bookSide">
+              <img src="images/book.png"/>
+            </div>
+            <div class="titleSide">
+              <h2>Getting Started</h2>
+              <p>Launching a new team or joining for the first time? <br>
+                 Our easy-to-read help your team work better, together, from day one.
+              </p>
+            </div>
+          </div>
+
+          <div class="takeawaysInfo">
+            <div class="takeContent">
+              <h2>Takeaways</h2>
+              <div class="line"></div>
+              <div class="takeawaysP">
+                  <p><span>Download our apps</span> for desktop and mobile to get the best of Bini exprience.<br><br>
+                  Use publics channels to keep your work transparent. These conversations instantly create a searchable archive of knowledge-like your team´s collective brain.<br><br>
+                  Customize your notifications soy you don't miss anything that's important to you.<br><br>
+                  Share files in Slack and other can give you feedback, all in one place.<br><br>
+                  Explore our <span>App Directory</span> to start integrating the tools you already use directly into Slack -- and discover new apps along the way.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bigLine"></div>
+
+          <div class="featuresInfo" xxng-controller="BiniController as site">
+            <h2>How do I become featured?</h2>
+            <div class="featureP">
+              <p>Periodically, we announce different ways to become featured in the "Discover" tab.<br>Currently, we are featuring our first set of influencers whi have joined our platform.</p>
+            </div>
+            <div class="imgPhone"><img src="images/phoneScreen.png"/></div>
+          </div>
+
+          <div class="bigLine"></div>
+
+          <div class="featuresInfo" ng-controller="BiniController as site">
+            <h2>How do I change my category?</h2>
+            <div class="featureP">
+              <p>It’s very easy to change your category. Choose the icon of a person, on the bottom, right-hand corner of your screen. Under “Account,” select “Edit Profile.” Scroll down, and you will see the field to change your category.</p>
+            </div>
+          </div>
+
+          <div class="bigLine"></div>
+
+          <div class="featuresInfo" ng-controller="BiniController as site">
+            <h2>How do I change my profile information?</h2>
+            <div class="featureP">
+              <p>We have made the process to change your profile picture or information very simple. Choose the icon of a person, on the bottom, right-hand corner of your screen. Under “Account,” selected “Edit Profile.” You will see the circle with your current profile photo, with a camera on top of it. Select the camera, and it will prompt you to upload a new photo via your camera or library. As for your information, replace the information in the desired fields.</p>
+            </div>
+          </div>
+
+          <div class="bigLine"></div>
+
+          <div class="featuresInfo" ng-controller="BiniController as site">
+            <div class="featuresQuestion">
+              <h3>Was this helpful?</h3>
+              <div class="btns">
+                <a>No</a>
+                <a>Yes</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bigLine"></div>
+
+        </div>
+          
+          
+        
+        <div class="col-md-8 contentInfo" id="polices">
+            
+          <div class="infoTitle">
+            <div class="bookSide">
+              <img src="images/book.png"/>
+            </div>
+            <div class="titleSide">
+              <h2>Polices and Guidelines</h2>
+              <p>Bini was created as a fun and interactive space to share the world through<br>the user’s eyes. We created these Community Guidelines in an effort to create<br>a safe and enjoyable experience for all of our Binis.
+              </p>
+            </div>
+          </div>
+            
+          <div class="takeawaysInfo">
+            <div class="takeContent">
+              <h2>Community Guidelines</h2>
+              <div class="line"></div>
+              <div class="takeawaysP">
+                  <p><span>Act like a Bini.</span> Be thoughtful, respectful, and considerate of others when you are posting, commenting, or sharing. Avoid condescending, hateful, mean, or insulting remarks.<br><br>
+                  <span>Keep Bini activity legal and on the up-andup.</span> Avoid posting pornography, nudity or sexually suggestive content(specially involving minors (18 years of age)), photos or videos of someone without their consent, threatening Bini users, harassing, bullying, libel, slander, defamation of character or spamming, and avoid impersonating anyone.<br><br>
+                  <span>Comments</span> can be deleted by Bini at any time, especially if it has been reported. Again, be thoughtful, respectful, and considerate when leaving a comment for another Bini user.<br><br>
+                  <span>Sharing</span> your Bini posts, privately or public, on other platforms is permitted. However, we also reserve the right to use your posts for the purposes of Bini.<br><br>
+                  <span>Avoid stealing intellectual property.</span> Give credit where credit is due. Never use the content of another, as your own, without providing the proper credit.</p>
+              </div>
+            </div>
+          </div>
+            
+          <div class="bigSpace"></div>
+          
+          <div class="featuresInfo" ng-controller="BiniController as site">
+            <div class="featureP">
+              <p>If you violate any part of these guidelines, we reserve the right to remove the offensive content or suspend or terminate your Bini account. If your Bini account is terminated, you will not be accepted into the Bini community again.<br><br>
+              We take this platform and community seriously, and we ask you to do the same. The rules can change and evolve, as do the people within the Bini community. We will strive to enforce these guidelines in a fair and consistent manner, but we can assure you that we will do our best to make the most appropriate decision, based on each unique situation. 
+              <br><br>
+              If you would like to suggest an addition to these Bini Community Guidelines, please email us at CustomerService@Bini.Social.
+              <br><br>
+              Thank you, in advance, for your cooperation.</p>
+            </div>
+          </div>
+            
+          <div class="bigLine"></div>
+            
+            
+        </div>
+          
+          
+          
+          
+        <div class="col-md-8 contentInfo" id="account">
+            
+          <div class="infoTitle">
+            <div class="bookSide">
+              <img src="images/book.png"/>
+            </div>
+            <div class="titleSide">
+              <h2>My Account and Settings</h2>
+              <p>Discover tips and tricks, find answers to common questions, and get help!
+              </p>
+            </div>
+          </div>
+            
+          <div class="mediumSpace"></div>    
+            
+          <div class="featuresInfo" ng-controller="BiniController as site">
+            <div class="featureP">
+              <p>If you know your password and would like to change it, you can do so at any time <a href="#">here!</a><br><br>
+              <b>Forgot your password?</b> No problem - there’s a few ways you can reset it &#128512;.<br><br>
+              If you have a verified phone number or email associated with your account you can reset your password from the Snapchat Log In screen. You can also reset your password via email <a href="#">here</a>.  
+              </p>
+            </div>
+            <div class="featureList">
+                <p><b>To reset your password via Email from the Snapchat Log In screen:</b></p>
+                <ol>
+                    <li>Tap <b>‘Forgot your password?’</b></li>
+                    <li>Then select how you would like to reset your password - via email.</li>
+                    <li>You should receive a password reset link via email to the email address associated with your account.</li>
+                    <li>Click the URL - if you cannot click the URL, please copy and paste the URL into your browser.</li>
+                    <li>Lastly, enter your new desired password!</li>
+                </ol>
+            </div>
+            <div class="featureList">
+                <p><b>To reset your password via SMS from the Snapchat Log In screen:</b></p>
+                <ol>
+                    <li>Tap <b>‘Forgot your password?’</b></li>
+                    <li>Then select how you would like to reset your password - via SMS.</li>
+                    <li>A verification code should be sent to the phone number associated with your account.</li>
+                    <li>Enter the verification code and select <b>‘Continue’</b>.</li>
+                    <li>Lastly, enter your new desired password!</li>
+                </ol>
+            </div>
+            <div class="featureP">
+              <p><b>Pro Tip:</b> Select a password that is at least 8 characters in length, that does not contain your name, username, phone number, birthday, or other personal information. It is best to include a mix of numbers, symbols and/or capital and lowercase letters in your new password.<br><br>
+              Also, if you have Login Verification enabled you may need your Verification or Recovery Code to log in.
+              </p>
+            </div>
+            <div class="featureList">
+                <p><b>For security reasons, we're unable to reset a password for an account if:</b></p>
+                <ul>
+                    <li>The email address you are writing in from is not associated with the account;</li>
+                    <li>you do not know the associated email address and/or phone number;</li>
+                    <li>you do not have access to the email address and/or phone number linked to the account.</li>
+                </ul>
+            </div>
+              
+            <div class="bigLine"></div>
+              
+            <div class="featuresInfo" ng-controller="BiniController as site">
+                <div class="featuresQuestion">
+                  <h3>Was this helpful?</h3>
+                  <div class="btns">
+                    <a>No</a>
+                    <a>Yes</a>
+                  </div>
+                </div>
+              </div>
+              
+            <div class="bigSpace"></div>
+
+          </div>
+            
+        </div>
+          
+          
+        <div class="col-md-8 contentInfo" id="help">
+          <h2>Contact Us</h2>
+          <form action="#" method="post">
+            <h4>Name*</h4><br>
+            <input type="text" name="firstname" placeholder="First name">
+            <input type="text" name="lastname" placeholder="Last name">
+            <br><br>
+            
+            <h4>Email Address*</h4><br>
+            <input type="email" name="email" placeholder="Email">
+            <br><br>
+             
+            <h4>Subject*</h4><br>
+            <input type="text" name="subject" placeholder="Subject (Optional but helpful)">
+            <br><br>
+            
+            <h4>Message*</h4><br>
+            <input type="text" name="message" placeholder="Message" rows="4" class="message">
+            <br><br>
+            
+            <input type="submit" value="Send">
+            
+          
+          </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+ <section class="footer">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="socialNetworks">
+          <ul>
+            <li><a href="https://www.facebook.com/binisocial/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+            <li><a href="https://www.twitter.com/binisocial/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+            <li><a href="https://www.instagram.com/binisocial/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+            <li><a href="https://www.pinterest.com/binisocial/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a> </li>
+            <li><a href="images/bini-snapchat-code.png" download="download"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a> </li>
+          </ul>
+        </div>
+        <div class="copyRight">
+          <p>&copy2016 Bini, LLC</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--========== Angular.js ==========-->
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
