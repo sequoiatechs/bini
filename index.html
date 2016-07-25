@@ -28,12 +28,14 @@
   </head>
 
   <body>
-
-    <section class="biniHome">
+      
+      
+  
+    <section class="biniHome fullscreen" style="background-image:url('images/background-02.png')">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="col-md-6 infoSide">
+          <div class="col-md-12 content-a">
+            <div class="col-md-6 infoSide content-b">
               <img src="images/highreslogo.png" alt="" />
               <h1>EXPRESS YOURSELF <br>THROUGH COMPARISSONS</h1>
               <a href="http://apple.com" target="_blank"> <img src="images/highresdownload.png"/></a>
@@ -62,19 +64,31 @@
             </div>
 
 
-            <div class="col-md-6 phoneSide">
+            <div class="col-md-6 phoneSide content-b">
               <span class="imageHelper"></span>
               <img class="phoneFrame" src="images/iphone.png">
-              <!-- <video class="phoneVideo" autoplay="autoplay" loop muted="muted">
+<!--
+               <video class="phoneVideo" autoplay="autoplay" loop muted="muted">
                 <source src="images/Bini.mp4" type="video/mp4">
-              </video> -->
+              </video> 
+-->
             </div>
           </div>
         </div>
       </div>
     </section>
 
+  <!--========== Google Analytics ==========-->
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-59802093-2', 'auto');
+      ga('send', 'pageview');
+
+  </script>
   <!--========== Angular.js ==========-->
   <script type="text/javascript" src="js/angular.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
