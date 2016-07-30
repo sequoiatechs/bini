@@ -1,14 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
 
-body{
+html, body{
   margin: 0;
   padding: 0;
-/*  height: 100%;*/
+  height: 100%;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4 { 
+h1, h2, h3, h4 {
     font-family: 'Raleway';
 }
 
@@ -23,16 +23,11 @@ p {
 .background {
     background-repeat:no-repeat;
     /* custom background-position */
-    background-position:50% 50%;
+    /*background-position:50% 50%;*/
     /* ie8- graceful degradation */
     background-position:50% 50%\9 !important;
 }
 
-/* fullscreen setup */
-html, body {
-    /* give this to all tags from html to .fullscreen */
-    height:100%;
-}
 .fullscreen,
 .content-a {
     width:100%;
@@ -45,31 +40,6 @@ html, body {
     min-height:100%;
 }
 
-/* content centering styles */
-.content-a {
-	display:table;
-}
-.content-b {
-	display:table-cell;
-    position:relative;
-	vertical-align:middle;
-	text-align:center;
-}
-
-/* visual styles */
-body{
-    margin:0;
-    font-family:sans-serif;
-    font-size:28px;
-    line-height:100px;
-	color:#ffffff;
-/*    text-align:center;*/
-}
-/*
-section {
-	background: #151B1F;
-}
-*/
 
 
 
@@ -94,9 +64,16 @@ section {
 }
 */
 
+.biniHome {
+  /*position: relative;*/
+}
+
 .biniHome .infoSide {
   text-align: center;
+  /*position: absolute;*/
   margin-top: 15%;
+  /*top: 50%;
+  margin-top:-5em;*/
 }
 
 .biniHome .infoSide img:first-child{
@@ -149,7 +126,7 @@ section {
 
 .biniHome .infoSide .socialNetworks{
   margin-left: -43px;
-  margin-top: -25px;
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
@@ -176,6 +153,7 @@ section {
 
 /*phone side*/
 
+
 .biniHome .phoneSide {
   text-align: center;
   white-space: nowrap;
@@ -188,11 +166,10 @@ section {
 }
 
 .biniHome .phoneSide .phoneFrame {
-  width: 300px; 
+  width: 350px;
   margin: 0px auto;
-  margin-top: 19%;  
+  margin-top: 19%;
 }
-
 
 
 
@@ -374,16 +351,15 @@ nav.navbar.shrink {
 
 /*============= About Section =============*/
 .aboutBg {
-    height: 100%;
+    /*height: 100%;*/
     width: 100%;
     text-align: center;
-    left: 0px;
+    /*left: 0px;
     top: 0px;
-    z-index: -1;
+    z-index: -1;*/
 }
 
 .aboutBg img {
-    height: 100%;
     width: 100%;
 }
 
@@ -435,8 +411,8 @@ nav.navbar.shrink {
 }
 
 .infoContainer a:hover {
-    color: #333;
-    text-decoration: none;
+    color: #267F6E;
+/*    text-decoration: none;*/
 }
 
 .infoContainer h4 {
@@ -487,7 +463,7 @@ li.linksmenu.active a {
 }
 
 .contentSection .contentInfo {
-   
+
 }
 
 .contentSection .contentInfo .infoTitle {
@@ -785,1278 +761,154 @@ li.linksmenu.active a {
   color: #D3D3D3;
 }
 
+.movilHeader {
+  display: none;
+}
+
 /*================== media devices ============*/
 /*================== media devices end =================*/
-
-
-/*Small devices (phones, tablets)*/
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-    header {
-        height: 100px;
+@media screen and (min-width: 601px) {
+    .biniHome .infoSide {
+      text-align: center;
+      margin: 0 auto;
     }
 
-    header .headerLogos {
-        margin-top: 5%;
-
+    .biniHome .phoneSide {
+        /*display: none;*/
     }
 
-    header .logoLeft {
-        text-align: left;
-        display: inline-block;
-        float: left;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .movilHeader {
+      z-index: 2;
+      text-align: justify;
+      background-color: #151B1F;
+      border-bottom: 1px solid #3BCAAE;
+      height: 65px;
+      width: 100%;
+      display: block;
+      position: fixed;
+    }
+    .movilHeader .logoSide {
+      display: inline-block;
+      float: left;
+      margin-top: 2%;
+    }
+    .movilHeader .logoSide img{
+      height: 55px;
+      /*margin-left: -250px;*/
+    }
+    .movilHeader .linksSide {
+      display: inline-block;
+      float: right;
+    }
+    .btn-group {
+      /*float: left;*/
+    }
+    .movilHeader .linksSide ul li {
+      list-style: none;
+    }
+    .movilHeader .dropdown-menu {
+      margin-left: -100px;
+    }
+    .movilHeader .linksSide ul li a {
+      color: #151B1F;
+      font-size: 20px;
+      font-family: 'Raleway';
+      border-bottom: 1px solid #3BCAAE;
+      padding: 10px 10px;
+    }
+    .movilHeader .linksSide #none {
+      border-bottom: none;
     }
 
-    header .logoMiddle {
-        text-align: center;
+    .movilHeader .linksSide button {
+      background-color: #151B1F;
+      border: 1px solid #3BCAAE;
+      font-size: 25px;
+      color: #3BCAAE;
+      padding-top: 2px;
+      padding-left: 6px;
+      padding-right: 6px;
+      padding-bottom: 0px;
+      margin-top: 35%;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    }
+
+
+  /*============ HOME SECTION ===========*/
+
+    .biniHome .infoSide {
+      text-align: center;
+      margin-top: 30%;
+    }
+    .biniLinks  {
+      display: none;
+    }
+    .biniHome .phoneSide {
         display: none;
     }
 
-    header .appStoreImg {
-        text-align: right;
-        cursor: pointer;
-        display: inline-block;
-        float: right;
-        width: 115px;
-        height: 34px;
-    }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
-    .biniHome {
-      min-height: 805px;
-      background-image: url("../images/background-02.png");
-      background-size: cover;
-      background-color: #000000;
-    }
-
-    .biniHome .infoSide {
-      text-align: center;
-      margin-top: 15%;
-    }
-
-    .biniHome .infoSide img:first-child{
-      width: 182px;
-      height: 125px;
-    }
-
-    .biniHome .infoSide h1 {
-      color: #ffffff;
-      font-size: 2.4rem;
-      font-weight: bold;
-      line-height: 1.4em;
-    }
-
-    .biniHome .infoSide img:last-child{
-      width: 258px;
-      height: 76px;
-      margin-top: 30px;
-      margin-bottom: 25px;
-      cursor: pointer;
-    }
-
-    .biniHome .infoSide .biniLinks{
-      color: #ffffff;
-      margin-left: -43px;
-    }
-
-    .biniHome .infoSide .biniLinks img:first-child{
-      width: 44px;
-      height: 44px;
-      cursor: pointer;
-    }
-
-    .biniHome .infoSide .biniLinks li{
-      list-style: none;
-      display: inline-block;
-    }
-
-    .biniHome .infoSide .biniLinks a{
-      color: #ffffff;
-      text-decoration: none;
-      padding: 3px;
-      font-size: 1.1em;
-      cursor: pointer;
-    }
-
-    .biniHome .infoSide .biniLinks a:hover{
-      color: #3BCAAE;
-    }
-
-    .biniHome .infoSide .socialNetworks{
-      margin-left: -43px;
-      margin-top: -25px;
-      margin-bottom: 30px;
-    }
-
-    .biniHome .infoSide .socialNetworks li{
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-    }
-
-    .biniHome .infoSide .socialNetworks li a{
-      font-size: 16pt;
-      color: #3BCAAE;
-      top: 0.5rem;
-      bottom: -3rem;
-      padding: 3px;
-      cursor: pointer;
-    }
-
-    .biniHome .infoSide .copyRight p{
-      font-size: 8pt;
-      color: #D3D3D3;
-    }
-
-    /*phone side*/
-
-    .biniHome .phoneSide {
-      text-align: center;
-      white-space: nowrap;
-    }
-
-    .biniHome .phoneSide .imageHelper {
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-    }
-
-    .biniHome .phoneSide .phoneFrame {
-      width: 300px;
-      margin-top: 20%;
-    }
-
-
-
-
-    /*.phoneframe + .phoneFrame {
+  /*============ ABOUT SECTION ===========*/
+    .header {
       display: none;
-    }*/
-
-    /*.biniHome .phoneSide .phoneVideo {
-      position: absolute;
-      max-height: 420px;
-      top: 10rem;
-      right: 4rem;
-      width: 259px;
-      height: 461px;
-    }*/
-
-
-    /*======================= 2. Support Site ==================*/
-
-    header {
-        background-color: #151B1F;
-        text-align: center;
-        border-bottom: 3px solid #00C4A0;
-        height: 113px;
+    }
+    .aboutBg img{
+      margin-top: 60px;
+    }
+    .infoContainer #imgAbout {
+      width: 300px;
     }
 
-    header .headerLogos {
-        margin-top: 2%;
-
-    }
-
-    header .logoLeft {
-        text-align: left;
-        display: inline-block;
-        float: left;
-    }
-
-    header .logoMiddle {
-        text-align: center;
-        display: inline-block;
-    }
-
-    header .appStoreImg {
-        text-align: right;
-        cursor: pointer;
-        display: inline-block;
-        float: right;
-    }
-
-
-
-    .questionSection {
-        height: 465px;
-        width: 100%;
-        background-image: url("../images/background-03.png");
-        background-size: cover;
-        text-align: center;
-    }
-
+  /*============ ABOUT SECTION ===========*/
     .questionSection img:first-child {
-        margin-top: 30px;
+      margin-top: 90px;
     }
-
     .questionSection h1 {
-        color: #00C4A0;
-        font-size: 46px;
-        margin-bottom: 20px;
-        font-family: 'Raleway';
-        font-weight: bold;
+      font-size: 35px;
     }
-
-    .questionSection .searchInput {
-      font-size: 25px;
-      margin-top: 20px;
-    }
-
     .questionSection .searchInput input {
-      width: 800px;
-      height: 62px;
-      background: #FFFFFF;
-      border: 1px solid #aaa;
+      width: 90%;
+      margin-top: 15px;
     }
-
-    .questionSection .searchInput input {text-indent: 32px;}
+    .contentSection .contentInfo .bookSide img {
+      display: none;
+    }
+    .contentSection .contentLinks {
+      margin-left: -45px;
+      text-align: center;
+    }
+    .contentSection .bigLine {
+      width: 105%;
+    }
+    .featuresInfo {
+      /*text-align: center;*/
+    }
+    .contentSection .contentInfo input {
+      width: 90%;
+      height: 40px;
+      margin: 5px 0px;
+    }
+    .contentSection .contentInfo input:nth-child(3) {
+      width: 90%;
+    }
+    .contentSection .contentInfo input:nth-child(4) {
+      width: 90%;
+    }
+    .contentSection .contentInfo input:last-child {
+      width: 90%;
+    }
+    .contentSection .contentInfo .message {
+      width: 90%;
+    }
 
     .termsBg {
-        height: 230px;
-        width: 100%;
-        background-color: #242B34;
-        text-align: center;
+      height: 285px;
     }
-
     .termsBg img:first-child {
-        margin-top: 30px;
-    }
-
-    .termsBg h1 {
-        color: #00C4A0;
-        font-size: 46px;
-        margin-bottom: 20px;
-    }
-
-    .termsText {
-        margin: 40px 0px;
-    }
-
-    .termsText .termsInfo p {
-        font-size: 20px;
-        line-height: 160%;
-    }
-
-
-    /*============= About Section =============*/
-    .aboutBg {
-        height: 100%;
-        width: 100%;
-        text-align: center;
-        left: 0px;
-        top: 0px;
-        z-index: -1;
-    }
-
-    .aboutBg img {
-        height: 100%;
-        width: 100%;
-    }
-
-
-
-
-    .infoContainer {
-        text-align: center;
-        padding: 50px 0px;
-    }
-
-    .inverse {
-        background-color: #F7F7F7;
-
-    }
-
-    .team {
-        margin: 20px 0px;
-    }
-
-    .infoContainer h1 {
-        font-size: 50px;
-        color: 46434B;
-        font-family: 'Raleway';
-        font-weight: bold;
-    }
-
-    .infoContainer p {
-        text-align: left;
-        font-size: 24px;
-        color: 46434B;
-        font-family: 'Helvetica';
-    }
-
-    .infoContainer .text {
-        margin-top: 50px;
-    }
-
-    .infoContainer h3 {
-        font-size: 20px;
-        font-family: 'Helvetica';
-    }
-
-    .infoContainer h4 {
-        font-size: 18px;
-        color: #3BC7AB;
-        text-transform: uppercase;
-        font-family: 'Helvetica';
-    }
-
-
-    /*============== Información y contenido =========*/
-
-    .contentSection .contentLinks {
-        height: 100%;
-        margin-top: 25px;
-    }
-
-    .contentSection .contentLinks li {
-        list-style: none;
-        padding: 10px 10px;
-        cursor: pointer;
-        border: none;
-    }
-
-    .contentSection .contentLinks a {
-        text-decoration: none;
-        color: #000;
-        font-size: 16px;
-        border: none;
-    }
-
-    .active {
-        background: #00C4A0;
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: none;
-    }
-
-    li.linksmenu.active a {
-        color: #ffffff;
-    }
-
-
-
-    .contentSection .contentInfo {
-        height: 100%;
-        margin-left: -20px;
-    }
-
-    .contentSection .contentInfo {
-
-    }
-
-    .contentSection .contentInfo .infoTitle {
-    /*    background-color: aqua;*/
-        margin-top: 13px;
-    }
-
-    .contentSection .contentInfo .bookSide {
-        display: inline-block;
-    }
-
-    .contentSection .contentInfo .bookSide img {
-        margin-top: -50px;
-        margin-right: 40px;
-    }
-
-    .contentSection .contentInfo .titleSide {
-        display: inline-block;
-    }
-
-    .contentSection .contentInfo .titleSide h2 {
-        font-family: 'Raleway';
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .contentSection .contentInfo .titleSide p {
-        font-size: 16px;
-        font-family: 'Helvetica';
-    }
-
-    .contentSection .takeawaysInfo {
-        border: 2px solid #E7E3EA;
-        border-radius: 10px;
-        margin-top: 60px;
-        width: 95%;
-    }
-
-    .contentSection .takeawaysInfo .takeContent {
-        padding: 10px 20px;
-    }
-
-    .contentSection .takeawaysInfo .takeContent h2 {
-        font-size: 22px;
-        padding-bottom: 10px;
-        font-family: 'Raleway';
-        font-weight: bold;
-    }
-
-    .contentSection .takeawaysInfo .line {
-        border-bottom: 2px solid #E7E3EA;
-    }
-
-
-    .contentSection .takeawaysInfo .takeawaysP {
-        width: 80%;
-        margin-left: 35px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-family: 'Helvetica';
-    }
-
-    .contentSection .takeawaysInfo .takeawaysP p {
-        font-size: 16px;
-        line-height: 160%;
-        font-family: 'Helvetica';
-    }
-
-    .contentSection .featuresInfo .featureP p {
-        line-height: 160%;
-        font-family: 'Helvetica';
-    }
-
-    .contentSection .takeawaysInfo .takeawaysP span {
-        color: #00C4A0;
-    }
-
-    .contentSection .bigLine {
-        border-top: 2px solid #E7E3EA;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        width: 95%;
-    }
-
-    .smallLine {
-        text-align: center;
-        border-bottom: 2px solid #E7E3EA;
-        width: 30%;
-        display: inline-block;
-        margin-bottom: 25px;
-    }
-
-    .contentSection .bigSpace {
-        margin: 60px 0px;
-    }
-
-    .contentSection .mediumSpace {
-        margin: 40px 0px;
-    }
-
-    .contentSection .featuresInfo {
-        width: 90%;
-    }
-
-    .contentSection .featuresInfo h2 {
-        font-size: 30px;
-        margin-bottom: 30px;
-        font-family: 'Raleway';
-        font-weight: bold;
-    }
-
-    .contentSection .featuresInfo .featureP p{
-        font-size: 16px;
-        margin-bottom: 40px;
-        font-family: 'Helvetica';
-    }
-
-    .contentSection .featuresInfo .imgPhone {
-        text-align: center;
-        margin-bottom: 60px;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion {
-        text-align: center;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion h3 {
-        font-size: 18px;
-        font-family: 'Raleway';
-        font-weight: bold;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion .btns {
-        margin-top: 30px;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion a {
-        background-color: #242B34;
-        color: #ffffff;
-        padding: 15px 55px;
-        text-transform: uppercase;
-        font-size: 20px;
-        text-decoration: none;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion a:hover {
-        background-color: #1F252B;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion a:last-child {
-        background-color: #00C29E;
-        color: #ffffff;
-        padding: 15px 55px;
-        text-transform: uppercase;
-        font-size: 20px;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .contentSection .featuresInfo .featureList {
-        margin: 30px 0px;
-        font-size: 16px;
-        line-height: 160%;
-    }
-
-
-    .contentSection .featuresInfo .featureList b {
-        font-size: 16px;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion a:last-child:hover {
-        background-color: #04B593;
-    }
-
-    .contentSection .contentInfo input {
-        width: 600px;
-        height: 40px;
-    }
-
-    .contentSection .contentInfo input:nth-child(3) {
-        width: 300px;
-    }
-
-    .contentSection .contentInfo input:nth-child(4) {
-        width: 300px;
-    }
-
-    .contentSection .contentInfo input:last-child {
-        background-color: #00C4A0;
-        border: none;
-        border-radius: 5px;
-        width: 130px;
-        height: 50px;
-        color: #ffffff;
-        cursor: pointer;
-        font-size: 20px;
-    }
-
-    .contentSection .contentInfo .message {
-        height: 100px;
-    }
-
-    .contentSection .contentInfo form {
-        margin-bottom: 50px;
-    }
-
-    .contentSection .contentInfo  h2 {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        color: #555459;
-        font-size: 30px;
-    }
-
-    .contentSection .contentInfo form h4 {
-        margin-bottom: -10px;
-        font-size: 15px;
-        color: #555459;
-    }
-
-
-
-    /*============= Footer Section ===============*/
-
-    .footer {
-        background-color: #151B1F;
-        text-align: center;
-        border-bottom: 3px solid #00C4A0;
-    }
-
-    .footer .socialNetworks{
-      margin-left: -43px;
-      margin-top: 20px;
-      margin-bottom: 15px;
-    }
-
-    .footer .socialNetworks li{
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-    }
-
-    .footer .socialNetworks li a{
-      font-size: 16pt;
-      color: #3BCAAE;
-      top: 0.5rem;
-      bottom: -3rem;
-      padding: 3px;
-      cursor: pointer;
-    }
-
-    .footer .copyRight p{
-      font-size: 8pt;
-      color: #D3D3D3;
-    }
-
-    .footerDown {
-        background-color: #151B1F;
-        text-align: center;
-        border-bottom: 3px solid #00C4A0;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-    }
-
-    .footerDown .socialNetworks{
-      margin-left: -43px;
-      margin-top: 20px;
-      margin-bottom: 15px;
-    }
-
-    .footerDown .socialNetworks li{
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-    }
-
-    .footerDown .socialNetworks li a{
-      font-size: 16pt;
-      color: #3BCAAE;
-      top: 0.5rem;
-      bottom: -3rem;
-      padding: 3px;
-      cursor: pointer;
-    }
-
-    .footerDown .copyRight p{
-      font-size: 8pt;
-      color: #D3D3D3;
-    }
-
-}
-
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
-    .biniHome {
-      min-height: 805px;
-      background-image: url("../images/background-02.png");
-      background-size: cover;
-      background-color: #000000;
-    }
-
-    .biniHome .infoSide {
-      text-align: center;
-      margin-top: 15%;
-    }
-
-    .biniHome .infoSide img:first-child{
-      width: 182px;
-      height: 125px;
-    }
-
-    .biniHome .infoSide h1 {
-      color: #ffffff;
-      font-size: 2.4rem;
-      font-weight: bold;
-      line-height: 1.4em;
-    }
-
-    .biniHome .infoSide img:last-child{
-      width: 258px;
-      height: 76px;
-      margin-top: 30px;
-      margin-bottom: 25px;
-      cursor: pointer;
-    }
-
-    .biniHome .infoSide .biniLinks{
-      color: #ffffff;
-      margin-left: -43px;
-    }
-
-    .biniHome .infoSide .biniLinks img:first-child{
-      width: 44px;
-      height: 44px;
-      cursor: pointer;
-    }
-
-    .biniHome .infoSide .biniLinks li{
-      list-style: none;
-      display: inline-block;
-    }
-
-    .biniHome .infoSide .biniLinks a{
-      color: #ffffff;
-      text-decoration: none;
-      padding: 3px;
-      font-size: 1.1em;
-      cursor: pointer;
-    }
-
-    .biniHome .infoSide .biniLinks a:hover{
-      color: #3BCAAE;
-    }
-
-    .biniHome .infoSide .socialNetworks{
-      margin-left: -43px;
-      margin-top: -25px;
-      margin-bottom: 30px;
-    }
-
-    .biniHome .infoSide .socialNetworks li{
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-    }
-
-    .biniHome .infoSide .socialNetworks li a{
-      font-size: 16pt;
-      color: #3BCAAE;
-      top: 0.5rem;
-      bottom: -3rem;
-      padding: 3px;
-      cursor: pointer;
-    }
-
-    .biniHome .infoSide .copyRight p{
-      font-size: 8pt;
-      color: #D3D3D3;
-    }
-
-    /*phone side*/
-
-    .biniHome .phoneSide {
-      text-align: center;
-      white-space: nowrap;
-    }
-
-    .biniHome .phoneSide .imageHelper {
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-    }
-
-    .biniHome .phoneSide .phoneFrame {
-      width: 300px;
-      margin-top: 20%;
-    }
-
-
-
-
-    /*.phoneframe + .phoneFrame {
-      display: none;
-    }*/
-
-    /*.biniHome .phoneSide .phoneVideo {
-      position: absolute;
-      max-height: 420px;
-      top: 10rem;
-      right: 4rem;
-      width: 259px;
-      height: 461px;
-    }*/
-
-
-    /*======================= 2. Support Site ==================*/
-
-    header {
-        background-color: #151B1F;
-        text-align: center;
-        border-bottom: 3px solid #00C4A0;
-        height: 113px;
-    }
-
-    header .headerLogos {
-        margin-top: 2%;
-
-    }
-
-    header .logoLeft {
-        text-align: left;
-        display: inline-block;
-        float: left;
-    }
-
-    header .logoMiddle {
-        text-align: center;
-        display: inline-block;
-    }
-
-    header .appStoreImg {
-        text-align: right;
-        cursor: pointer;
-        display: inline-block;
-        float: right;
-    }
-
-
-
-    .questionSection {
-        height: 465px;
-        width: 100%;
-        background-image: url("../images/background-03.png");
-        background-size: cover;
-        text-align: center;
-    }
-
-    .questionSection img:first-child {
-        margin-top: 30px;
-    }
-
-    .questionSection h1 {
-        color: #00C4A0;
-        font-size: 46px;
-        margin-bottom: 20px;
-        font-family: 'Raleway';
-        font-weight: bold;
-    }
-
-    .questionSection .searchInput {
-      font-size: 25px;
-      margin-top: 20px;
-    }
-
-    .questionSection .searchInput input {
-      width: 800px;
-      height: 62px;
-      background: #FFFFFF;
-      border: 1px solid #aaa;
-    }
-
-    .questionSection .searchInput input {text-indent: 32px;}
-
-    .termsBg {
-        height: 230px;
-        width: 100%;
-        background-color: #242B34;
-        text-align: center;
-    }
-
-    .termsBg img:first-child {
-        margin-top: 30px;
-    }
-
-    .termsBg h1 {
-        color: #00C4A0;
-        font-size: 46px;
-        margin-bottom: 20px;
-    }
-
-    .termsText {
-        margin: 40px 0px;
-    }
-
-    .termsText .termsInfo p {
-        font-size: 20px;
-        line-height: 160%;
-    }
-
-
-    /*============= About Section =============*/
-    .aboutBg {
-        height: 100%;
-        width: 100%;
-        text-align: center;
-        left: 0px;
-        top: 0px;
-        z-index: -1;
-    }
-
-    .aboutBg img {
-        height: 100%;
-        width: 100%;
-    }
-
-
-
-
-    .infoContainer {
-        text-align: center;
-        padding: 50px 0px;
-    }
-
-    .inverse {
-        background-color: #F7F7F7;
-
-    }
-
-    .team {
-        margin: 20px 0px;
-    }
-
-    .infoContainer h1 {
-        font-size: 50px;
-        color: 46434B;
-        font-family: 'Raleway';
-        font-weight: bold;
-    }
-
-    .infoContainer p {
-        text-align: left;
-        font-size: 24px;
-        color: 46434B;
-        font-family: 'Helvetica';
-    }
-
-    .infoContainer .text {
-        margin-top: 50px;
-    }
-
-    .infoContainer h3 {
-        font-size: 20px;
-        font-family: 'Helvetica';
-    }
-
-    .infoContainer h4 {
-        font-size: 18px;
-        color: #3BC7AB;
-        text-transform: uppercase;
-        font-family: 'Helvetica';
-    }
-
-
-    /*============== Información y contenido =========*/
-
-    .contentSection .contentLinks {
-        height: 100%;
-        margin-top: 25px;
-    }
-
-    .contentSection .contentLinks li {
-        list-style: none;
-        padding: 10px 10px;
-        cursor: pointer;
-        border: none;
-    }
-
-    .contentSection .contentLinks a {
-        text-decoration: none;
-        color: #000;
-        font-size: 16px;
-        border: none;
-    }
-
-    .active {
-        background: #00C4A0;
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: none;
-    }
-
-    li.linksmenu.active a {
-        color: #ffffff;
-    }
-
-
-
-    .contentSection .contentInfo {
-        height: 100%;
-        margin-left: -20px;
-    }
-
-    .contentSection .contentInfo {
-
-    }
-
-    .contentSection .contentInfo .infoTitle {
-    /*    background-color: aqua;*/
-        margin-top: 13px;
-    }
-
-    .contentSection .contentInfo .bookSide {
-        display: inline-block;
-    }
-
-    .contentSection .contentInfo .bookSide img {
-        margin-top: -50px;
-        margin-right: 40px;
-    }
-
-    .contentSection .contentInfo .titleSide {
-        display: inline-block;
-    }
-
-    .contentSection .contentInfo .titleSide h2 {
-        font-family: 'Raleway';
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .contentSection .contentInfo .titleSide p {
-        font-size: 16px;
-        font-family: 'Helvetica';
-    }
-
-    .contentSection .takeawaysInfo {
-        border: 2px solid #E7E3EA;
-        border-radius: 10px;
-        margin-top: 60px;
-        width: 95%;
-    }
-
-    .contentSection .takeawaysInfo .takeContent {
-        padding: 10px 20px;
-    }
-
-    .contentSection .takeawaysInfo .takeContent h2 {
-        font-size: 22px;
-        padding-bottom: 10px;
-        font-family: 'Raleway';
-        font-weight: bold;
-    }
-
-    .contentSection .takeawaysInfo .line {
-        border-bottom: 2px solid #E7E3EA;
-    }
-
-
-    .contentSection .takeawaysInfo .takeawaysP {
-        width: 80%;
-        margin-left: 35px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-family: 'Helvetica';
-    }
-
-    .contentSection .takeawaysInfo .takeawaysP p {
-        font-size: 16px;
-        line-height: 160%;
-        font-family: 'Helvetica';
-    }
-
-    .contentSection .featuresInfo .featureP p {
-        line-height: 160%;
-        font-family: 'Helvetica';
-    }
-
-    .contentSection .takeawaysInfo .takeawaysP span {
-        color: #00C4A0;
-    }
-
-    .contentSection .bigLine {
-        border-top: 2px solid #E7E3EA;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        width: 95%;
-    }
-
-    .smallLine {
-        text-align: center;
-        border-bottom: 2px solid #E7E3EA;
-        width: 30%;
-        display: inline-block;
-        margin-bottom: 25px;
-    }
-
-    .contentSection .bigSpace {
-        margin: 60px 0px;
-    }
-
-    .contentSection .mediumSpace {
-        margin: 40px 0px;
-    }
-
-    .contentSection .featuresInfo {
-        width: 90%;
-    }
-
-    .contentSection .featuresInfo h2 {
-        font-size: 30px;
-        margin-bottom: 30px;
-        font-family: 'Raleway';
-        font-weight: bold;
-    }
-
-    .contentSection .featuresInfo .featureP p{
-        font-size: 16px;
-        margin-bottom: 40px;
-        font-family: 'Helvetica';
-    }
-
-    .contentSection .featuresInfo .imgPhone {
-        text-align: center;
-        margin-bottom: 60px;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion {
-        text-align: center;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion h3 {
-        font-size: 18px;
-        font-family: 'Raleway';
-        font-weight: bold;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion .btns {
-        margin-top: 30px;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion a {
-        background-color: #242B34;
-        color: #ffffff;
-        padding: 15px 55px;
-        text-transform: uppercase;
-        font-size: 20px;
-        text-decoration: none;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion a:hover {
-        background-color: #1F252B;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion a:last-child {
-        background-color: #00C29E;
-        color: #ffffff;
-        padding: 15px 55px;
-        text-transform: uppercase;
-        font-size: 20px;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .contentSection .featuresInfo .featureList {
-        margin: 30px 0px;
-        font-size: 16px;
-        line-height: 160%;
-    }
-
-
-    .contentSection .featuresInfo .featureList b {
-        font-size: 16px;
-    }
-
-    .contentSection .featuresInfo .featuresQuestion a:last-child:hover {
-        background-color: #04B593;
-    }
-
-    .contentSection .contentInfo input {
-        width: 600px;
-        height: 40px;
-    }
-
-    .contentSection .contentInfo input:nth-child(3) {
-        width: 300px;
-    }
-
-    .contentSection .contentInfo input:nth-child(4) {
-        width: 300px;
-    }
-
-    .contentSection .contentInfo input:last-child {
-        background-color: #00C4A0;
-        border: none;
-        border-radius: 5px;
-        width: 130px;
-        height: 50px;
-        color: #ffffff;
-        cursor: pointer;
-        font-size: 20px;
-    }
-
-    .contentSection .contentInfo .message {
-        height: 100px;
-    }
-
-    .contentSection .contentInfo form {
-        margin-bottom: 50px;
-    }
-
-    .contentSection .contentInfo  h2 {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        color: #555459;
-        font-size: 30px;
-    }
-
-    .contentSection .contentInfo form h4 {
-        margin-bottom: -10px;
-        font-size: 15px;
-        color: #555459;
-    }
-
-
-
-    /*============= Footer Section ===============*/
-
-    .footer {
-        background-color: #151B1F;
-        text-align: center;
-        border-bottom: 3px solid #00C4A0;
-    }
-
-    .footer .socialNetworks{
-      margin-left: -43px;
-      margin-top: 20px;
-      margin-bottom: 15px;
-    }
-
-    .footer .socialNetworks li{
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-    }
-
-    .footer .socialNetworks li a{
-      font-size: 16pt;
-      color: #3BCAAE;
-      top: 0.5rem;
-      bottom: -3rem;
-      padding: 3px;
-      cursor: pointer;
-    }
-
-    .footer .copyRight p{
-      font-size: 8pt;
-      color: #D3D3D3;
-    }
-
-    .footerDown {
-        background-color: #151B1F;
-        text-align: center;
-        border-bottom: 3px solid #00C4A0;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-    }
-
-    .footerDown .socialNetworks{
-      margin-left: -43px;
-      margin-top: 20px;
-      margin-bottom: 15px;
-    }
-
-    .footerDown .socialNetworks li{
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-    }
-
-    .footerDown .socialNetworks li a{
-      font-size: 16pt;
-      color: #3BCAAE;
-      top: 0.5rem;
-      bottom: -3rem;
-      padding: 3px;
-      cursor: pointer;
-    }
-
-    .footerDown .copyRight p{
-      font-size: 8pt;
-      color: #D3D3D3;
+      margin-top: 80px;
     }
 }

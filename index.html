@@ -6,6 +6,8 @@
     <title>BINI</title>
     <meta name="description" content="Descripción de BINI">
     <meta name="author" content="Autor BIni">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <!--========== CSS Custom File ===========-->
     <link rel="stylesheet" href="css/style.css" media="screen" title="CSS Custom" charset="utf-8">
@@ -13,11 +15,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="Bootstrap File" charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="Bootstrap File" charset="utf-8">
-    <!--========== Sekeleton CSS File ==========-->
-    <link rel="stylesheet" href="css/skeleton.css" media="screen" title="Skeleton File" charset="utf-8">
+
     <!--========== Favicon ==========-->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!--========== Fontawesome Icons ==========-->
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -27,17 +28,51 @@
     <link rel="stylesheet" href="css/animate.css">
     <!--=========== Google Fonts API ===========-->
     <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <!--=========== Bootstrap & jQuery JS ============-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
   </head>
 
   <body>
-      
-      
-  
+
+
+    <div class="movilHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 headerLinks">
+            <div class="col-md-6 logoSide">
+              <a href="index.html"><img src="images/highreslogomenu.png" alt="" /></a>
+            </div>
+            <div class="col-md-6 linksSide">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="https://medium.com/@binisocial">Blog</a></li>
+                  <li><a href="terms.html">Terms</a></li>
+                  <li><a href="privacy.html">Privacy</a></li>
+                  <li><a href="support.html" id="none">Support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="biniHome fullscreen" style="background-image:url('images/background-02.png')">
+
+
+
       <div class="container">
         <div class="row">
           <div class="col-md-12 content-a">
-            <div class="col-md-6 infoSide content-b animated fadeIn">
+            <div class="col-md-6 content-b infoSide animated fadeIn">
               <img src="images/highreslogo.png" alt="" />
               <h1>EXPRESS YOURSELF <br>THROUGH COMPARISSONS</h1>
               <a href="http://apple.com" target="_blank"> <img src="images/highresdownload.png"/></a>
@@ -66,19 +101,23 @@
             </div>
 
 
-            <div class="col-md-6 phoneSide content-b">
+            <div class="col-md-6 phoneSide">
               <span class="imageHelper"></span>
-              <img class="phoneFrame animated slideInDown" src="images/iphone.png">
+               <img class="phoneFrame animated slideInDown" src="images/biniGif.gif">
+
 <!--
-               <video class="phoneVideo" autoplay="autoplay" loop muted="muted">
-                <source src="images/Bini.mp4" type="video/mp4">
-              </video> 
+               <video class="phoneFrame animated slideInDown" autoplay="autoplay" loop muted="muted">
+                <source src="images/biniVideo.flv" type="rtmp/flv">
+              </video>
 -->
+
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
 
   <!--========== Google Analytics ==========-->
   <script>

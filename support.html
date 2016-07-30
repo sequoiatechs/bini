@@ -6,6 +6,8 @@
     <title>Support Bini</title>
     <meta name="description" content="Información detallada de BINI">
     <meta name="author" content="Autor BIni">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <!--========== CSS Custom File ===========-->
     <link rel="stylesheet" href="css/style.css" media="screen" title="CSS Custom" charset="utf-8">
@@ -15,7 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="Bootstrap File" charset="utf-8">
     <!--========== Sekeleton CSS File ==========-->
     <link rel="stylesheet" href="css/skeleton.css" media="screen" title="Skeleton File" charset="utf-8">
-      
+
     <!--========== JQuery UI & Javascript ==========-->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
@@ -37,33 +39,62 @@
 
     <!--=========== Google Fonts API ===========-->
     <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <!--=========== Bootstrap & jQuery JS ============-->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
 
   <body>
 
-      <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 headerLogos">
-                    <div class="col-md-6 logoLeft">
-                        <a href="index.html"><img src="images/logoBeta.png"/></a>
-                    </div>
-                    <div class="col-md-6 headerLinks">
-                        <nav class="nav">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html" class="linkActive">About</a></li>
-                                <li><a href="https://medium.com/@binisocial">Blog</a></li>
-                                <li><a href="support.html">Support</a></li>
-                                <li><a href="www.apple.com">Download</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+    <header class="header">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 headerLogos">
+                  <div class="col-md-6 logoLeft">
+                      <a href="index.html"><img src="images/logoBeta.png"/></a>
+                  </div>
+                  <div class="col-md-6 headerLinks">
+                      <nav class="nav">
+                          <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about.html" class="linkActive">About</a></li>
+                              <li><a href="https://medium.com/@binisocial">Blog</a></li>
+                              <li><a href="support.html">Support</a></li>
+                              <li><a href="www.apple.com">Download</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </header>
+
+    <div class="movilHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 headerLinks">
+            <div class="col-md-6 logoSide">
+              <a href="index.html"><img src="images/highreslogomenu.png" alt="" /></a>
             </div>
+            <div class="col-md-6 linksSide">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="https://medium.com/@binisocial">Blog</a></li>
+                  <li><a href="terms.html">Terms</a></li>
+                  <li><a href="privacy.html">Privacy</a></li>
+                  <li><a href="support.html" id="none">Support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </header>
-      
+      </div>
+    </div>
+
     <section class="questionSection">
      <div class="container">
       <div class="row">
@@ -73,7 +104,7 @@
           <div class="col-md-12 animated flipInY">
             <h1>Hi. How can we help you?</h1>
           </div>
-          <div class="col-md-12 searchInput">   
+          <div class="col-md-12 searchInput">
            <form>
                <input type="text" class="searchBar" name="question" placeholder="Search Bini">
            </form>
@@ -81,7 +112,7 @@
       </div>
     </div>
   </section>
-      
+
   <section class="contentSection" id="tabs">
   <div class="container">
     <div class="row">
@@ -97,7 +128,7 @@
         </div>
 
         <div class="col-md-1"></div>
-          
+
 
 
         <div class="col-md-8 contentInfo" id="started">
@@ -171,11 +202,11 @@
           <div class="bigLine"></div>
 
         </div>
-          
-          
-        
+
+
+
         <div class="col-md-8 contentInfo" id="polices">
-            
+
           <div class="infoTitle">
             <div class="bookSide">
               <img src="images/book.png"/>
@@ -186,7 +217,7 @@
               </p>
             </div>
           </div>
-            
+
           <div class="takeawaysInfo">
             <div class="takeContent">
               <h2>Community Guidelines</h2>
@@ -200,30 +231,30 @@
               </div>
             </div>
           </div>
-            
+
           <div class="bigSpace"></div>
-          
+
           <div class="featuresInfo" ng-controller="BiniController as site">
             <div class="featureP">
               <p>If you violate any part of these guidelines, we reserve the right to remove the offensive content or suspend or terminate your Bini account. If your Bini account is terminated, you will not be accepted into the Bini community again.<br><br>
-              We take this platform and community seriously, and we ask you to do the same. The rules can change and evolve, as do the people within the Bini community. We will strive to enforce these guidelines in a fair and consistent manner, but we can assure you that we will do our best to make the most appropriate decision, based on each unique situation. 
+              We take this platform and community seriously, and we ask you to do the same. The rules can change and evolve, as do the people within the Bini community. We will strive to enforce these guidelines in a fair and consistent manner, but we can assure you that we will do our best to make the most appropriate decision, based on each unique situation.
               <br><br>
               If you would like to suggest an addition to these Bini Community Guidelines, please email us at CustomerService@Bini.Social.
               <br><br>
               Thank you, in advance, for your cooperation.</p>
             </div>
           </div>
-            
+
           <div class="bigLine"></div>
-            
-            
+
+
         </div>
-          
-          
-          
-          
+
+
+
+
         <div class="col-md-8 contentInfo" id="account">
-            
+
           <div class="infoTitle">
             <div class="bookSide">
               <img src="images/book.png"/>
@@ -234,14 +265,14 @@
               </p>
             </div>
           </div>
-            
-          <div class="mediumSpace"></div>    
-            
+
+          <div class="mediumSpace"></div>
+
           <div class="featuresInfo" ng-controller="BiniController as site">
             <div class="featureP">
               <p>If you know your password and would like to change it, you can do so at any time <a href="#">here!</a><br><br>
               <b>Forgot your password?</b> No problem - there’s a few ways you can reset it &#128512;.<br><br>
-              If you have a verified phone number or email associated with your account you can reset your password from the Snapchat Log In screen. You can also reset your password via email <a href="#">here</a>.  
+              If you have a verified phone number or email associated with your account you can reset your password from the Snapchat Log In screen. You can also reset your password via email <a href="#">here</a>.
               </p>
             </div>
             <div class="featureList">
@@ -277,9 +308,9 @@
                     <li>you do not have access to the email address and/or phone number linked to the account.</li>
                 </ul>
             </div>
-              
+
             <div class="bigLine"></div>
-              
+
             <div class="featuresInfo" ng-controller="BiniController as site">
                 <div class="featuresQuestion">
                   <h3>Was this helpful?</h3>
@@ -289,14 +320,14 @@
                   </div>
                 </div>
               </div>
-              
+
             <div class="bigSpace"></div>
 
           </div>
-            
+
         </div>
-          
-          
+
+
         <div class="col-md-8 contentInfo" id="help">
           <h2>Contact Us</h2>
           <form action="#" method="post">
@@ -304,26 +335,26 @@
             <input type="text" name="firstname" placeholder="First name">
             <input type="text" name="lastname" placeholder="Last name">
             <br><br>
-            
+
             <h4>Email Address*</h4><br>
             <input type="email" name="email" placeholder="Email">
             <br><br>
-             
+
             <h4>Subject*</h4><br>
             <input type="text" name="subject" placeholder="Subject (Optional but helpful)">
             <br><br>
-            
+
             <h4>Message*</h4><br>
               <textarea type="text" name="message" placeholder="Message"  class="message"></textarea>
             <br><br>
-              
+
             <div class="g-recaptcha" data-sitekey="6LfF4SUTAAAAAO6tyAXjECGH83D-ie-rDmk6rIZx"></div><br><br>
-            
+
             <input type="submit" value="Send">
-            
+
           </form>
           </div>
-          
+
 <!--
           <form action="#">
             <input type="text" name="do-input-name" id="do-input-name" placeholder="Name">
@@ -335,7 +366,7 @@
             <button type="submit" id="do-submit-btn" class="do-btn-round-solid">SEND</button>
         </form>
 -->
-          
+
         </div>
 
       </div>
@@ -343,7 +374,7 @@
   </div>
 </section>
 
-      
+
  <section class="footer">
     <div class="container">
       <div class="col-md-12">

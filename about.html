@@ -7,7 +7,7 @@
     <meta name="description" content="About de BINI">
     <meta name="author" content="Autor BIni">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
+
     <!--=========== Google Fonts API ===========-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
     <!--========== CSS Custom File ===========-->
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="Bootstrap File" charset="utf-8">
     <!--========== Sekeleton CSS File ==========-->
     <link rel="stylesheet" href="css/skeleton.css" media="screen" title="Skeleton File" charset="utf-8">
-      
+
     <!--========== JQuery UI & Javascript ==========-->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
@@ -32,33 +32,15 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    
+    <!--=========== Bootstrap & jQuery JS ============-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
   </head>
 
   <body>
 
-<!--
-    <header class="header">
-      <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="headerLogos">
-                    <div class="logoLeft col-md-4">
-                        <a href="index.html"><img src="images/logoBeta.png" alt="" /></a>
-                    </div>
-                    <div class="logoMiddle col-md-4">
-                        <img src="images/logoHeader.png" alt="" />
-                    </div>
-                    <div class="appStoreImg col-md-4">
-                        <a href="http://apple.com" target="_blank"><img src="images/downloadApp.png" alt="" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-    </header>
--->
-      
+
     <header class="header">
         <div class="container">
             <div class="row">
@@ -82,12 +64,37 @@
         </div>
     </header>
 
-      
-    
+    <div class="movilHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 headerLinks">
+            <div class="col-md-6 logoSide">
+              <a href="index.html"><img src="images/highreslogomenu.png" alt="" /></a>
+            </div>
+            <div class="col-md-6 linksSide">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="https://medium.com/@binisocial">Blog</a></li>
+                  <li><a href="terms.html">Terms</a></li>
+                  <li><a href="privacy.html">Privacy</a></li>
+                  <li><a href="support.html" id="none">Support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <section class="aboutBg animated fadeIn">
         <img src="images/aboutBg.png"/>
     </section>
-      
+
     <section class="infoContainer">
         <div class="container">
             <div class="row">
@@ -99,7 +106,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="infoContainer inverse">
         <div class="container">
             <div class="row">
@@ -112,7 +119,7 @@
             </div>
         </div>
     </section>
-      
+
     <section class="infoContainer">
         <div class="container">
             <div class="row">
@@ -123,15 +130,15 @@
                         <p>Download, sign-up, and complete your profile. Afterwards, the application will show you just how easy it is to discover users by name, inter- est, or hashtags. All it takes is to snap a photo, choose a template, complete a caption, and share. Your friends will see all of your Binis in natural order, so they won’t miss a thing!</p>
                     </div>
                     <div class="col-md-6 animated slideInRight">
-                        <img src="images/phoneAbout.png"/>
+                        <img src="images/phoneAbout.png" id="imgAbout"/>
                         <h3><b>Downdload, sign-up,</b> and <b>complete</b> your <b>profile</b>.</h3>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </section>
-      
+
     <section class="infoContainer inverse">
         <div class="container">
             <div class="row">
@@ -157,7 +164,7 @@
                     </div>
                     <div class="col-md-3">
                         <a><img src="images/pic4.png" class="img-circle"></a>
-                        <a><h3>Poszonji Tamás</h3></a>
+                        <h3>Poszonji Tamás</h3>
                         <h4>Full stack developer</h4>
                     </div>
                 </div>
@@ -187,10 +194,10 @@
         </div>
     </section>
 
-    
-      
-  
-      
+
+
+
+
      <section class="footer">
         <div class="container">
           <div class="col-md-12">
