@@ -378,10 +378,10 @@ nav.navbar.shrink {
     margin: 20px 0px;
 }
 
-. infoContainer .team a{
+/*.infoContainer .team a{
     text-decoration: none;
     color: aqua;
-}
+}*/
 
 .infoContainer h1 {
     font-size: 50px;
@@ -395,6 +395,7 @@ nav.navbar.shrink {
     font-size: 24px;
     color: 46434B;
     font-family: 'Helvetica';
+    line-height: 2;
 }
 
 .infoContainer .text {
@@ -411,8 +412,8 @@ nav.navbar.shrink {
 }
 
 .infoContainer a:hover {
-    color: #267F6E;
-/*    text-decoration: none;*/
+    color: #3BC7AB;
+    text-decoration: none;
 }
 
 .infoContainer h4 {
@@ -436,12 +437,18 @@ nav.navbar.shrink {
     cursor: pointer;
     border: none;
 }
+.contentSection .contentLinks li:focus {
+    outline: none;
+}
 
 .contentSection .contentLinks a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
     border: none;
+}
+.contentSection .contentLinks a:focus {
+    outline: none;
 }
 
 .active {
@@ -801,18 +808,21 @@ li.linksmenu.active a {
     }
     .movilHeader .dropdown-menu {
       margin-left: -100px;
+      padding: 0;
+      border: 1px solid #000;
     }
     .movilHeader .linksSide ul li a {
-      color: #151B1F;
+      color: #ffffff;
       font-size: 20px;
       font-family: 'Raleway';
-      border-bottom: 1px solid #3BCAAE;
+      /*font-weight: 100;*/
+      /*border-bottom: 1px solid #3BCAAE;*/
       padding: 10px 10px;
+      background-color: #000;
     }
     .movilHeader .linksSide #none {
       border-bottom: none;
     }
-
     .movilHeader .linksSide button {
       background-color: #151B1F;
       border: 1px solid #3BCAAE;
