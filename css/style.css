@@ -241,6 +241,7 @@ header .headerLogos {
 header .logoLeft img {
     float: left;
     margin-top: 2.2%;
+    height: 75px;
 }
 
 header .headerLinks{
