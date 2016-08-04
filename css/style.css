@@ -71,9 +71,15 @@ p {
 .biniHome .infoSide {
   text-align: center;
   /*position: absolute;*/
-  margin-top: 15%;
+  /*margin-top: 15%;*/
   /*top: 50%;
   margin-top:-5em;*/
+
+}
+
+.infoSide {
+  margin-top: 50%;
+  transform: translateY(-25%);
 }
 
 .biniHome .infoSide img:first-child{
@@ -99,6 +105,7 @@ p {
 .biniHome .infoSide .biniLinks{
   color: #ffffff;
   margin-left: -43px;
+  margin-top: -20px;
 }
 
 .biniHome .infoSide .biniLinks img:first-child{
@@ -126,7 +133,7 @@ p {
 
 .biniHome .infoSide .socialNetworks{
   margin-left: -43px;
-  margin-top: 0;
+  margin-top: -25px;
   margin-bottom: 30px;
 }
 
@@ -157,18 +164,22 @@ p {
 .biniHome .phoneSide {
   text-align: center;
   white-space: nowrap;
+  margin-top:50%;
+  transform:translateY(-25%);
 }
 
-.biniHome .phoneSide .imageHelper {
+/*.biniHome .phoneSide .imageHelper {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
-}
+}*/
 
 .biniHome .phoneSide .phoneFrame {
   width: 350px;
-  margin: 0px auto;
-  margin-top: 19%;
+  /*margin-top:50%;
+  transform:translateY(-25%);*/
+  /*margin: 0px auto;*/
+  /*margin-top: 19%;*/
 }
 
 
@@ -777,7 +788,6 @@ li.linksmenu.active a {
 /*================== media devices end =================*/
 
 @media screen and (max-width: 600px) {
-
     .movilHeader {
       z-index: 2;
       text-align: justify;
@@ -821,6 +831,10 @@ li.linksmenu.active a {
       padding: 10px 10px;
       background-color: #000;
     }
+    .movilHeader .linksSide ul li a:hover {
+      color: #3BCAAE;
+      background-color: #151B1F;
+    }
     .movilHeader .linksSide #none {
       border-bottom: none;
     }
@@ -842,10 +856,14 @@ li.linksmenu.active a {
 
     .biniHome .infoSide {
       text-align: center;
-      margin-top: 30%;
+      margin-top: 100%;
+      /*transform:none;*/
     }
     .biniLinks  {
       display: none;
+    }
+    .biniHome .infoSide .socialNetworks {
+      margin-top: 0px;
     }
     .biniHome .phoneSide {
         display: none;
@@ -914,7 +932,8 @@ li.linksmenu.active a {
 
 @media screen and (max-width: 992px) {
   .biniHome .infoSide {
-    margin-top: 22%;
+    /*margin-top: 22%;*/
+    transform:translateY(-50%);
   }
   .phoneSide {
     display: none;
