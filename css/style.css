@@ -234,7 +234,7 @@ header .appStoreImg {
 
 header {
     z-index: 2;
-/*    position: fixed;*/
+    position: fixed;
     background-color: #151B1F;
     text-align: center;
     border-bottom: 3px solid #00C4A0;
@@ -297,6 +297,8 @@ nav.navbar.shrink {
     background-image: url("../images/background-03.png");
     background-size: cover;
     text-align: center;
+    margin-top: 90px;
+    display: -webkit-inline-box;
 }
 
 .questionSection img:first-child {
@@ -373,6 +375,7 @@ nav.navbar.shrink {
 
 .aboutBg img {
     width: 100%;
+    margin-top: 50px;
 }
 
 
@@ -707,6 +710,39 @@ li.linksmenu.active a {
     color: #555459;
 }
 
+.contactUs h2 {
+  margin-top: 150px;
+}
+
+.contactUs input {
+  width: 90%;
+  height: 40px;
+  margin: 5px 0px;
+}
+.contactUs input:nth-child(3) {
+  width: 45%;
+}
+.contactUs input:nth-child(4) {
+  width: 45%;
+}
+.contactUs input:last-child {
+  text-align: center;
+  width: 30%;
+  background-color: #00C4A0;
+  border: none;
+  border-radius: 5px;
+  width: 130px;
+  height: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.contactUs .message-two {
+  width: 90%;
+  height: 100px;
+}
+
 
 
 /*============= Footer Section ===============*/
@@ -788,6 +824,9 @@ li.linksmenu.active a {
 /*================== media devices end =================*/
 
 @media screen and (max-width: 600px) {
+    .questionSection {
+      margin-top: 0px;
+    }
     .movilHeader {
       z-index: 2;
       text-align: justify;
