@@ -79,7 +79,7 @@ p {
 
 .infoSide {
   margin-top: 50%;
-  transform: translateY(-25%);
+  transform: translateY(-30%);
 }
 
 .biniHome .infoSide img:first-child{
@@ -160,12 +160,20 @@ p {
 
 /*phone side*/
 
+.biniHome .holeVideo {
+  text-align: -webkit-center;
+  margin-left: -30px;
+}
 
 .biniHome .phoneSide {
   text-align: center;
   white-space: nowrap;
   margin-top:50%;
-  transform:translateY(-25%);
+  width: 269px;
+  height: 550px;
+  transform:translateY(-35%);
+  background-image: url("../images/iphone.png");
+  background-size: cover;
 }
 
 /*.biniHome .phoneSide .imageHelper {
@@ -175,12 +183,23 @@ p {
 }*/
 
 .biniHome .phoneSide .phoneFrame {
-  width: 350px;
+  width: 240px;
+  margin-top: 60px;
   /*margin-top:50%;
   transform:translateY(-25%);*/
   /*margin: 0px auto;*/
   /*margin-top: 19%;*/
 }
+
+
+/*.biniHome .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/phone5.svg");
+}*/
 
 
 
@@ -341,6 +360,10 @@ nav.navbar.shrink {
     width: 100%;
     background-color: #242B34;
     text-align: center;
+}
+
+.noneFixed {
+  position: relative;
 }
 
 .termsBg img:first-child {
